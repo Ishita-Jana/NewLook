@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".customer.fragments.UserOrderRegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Project Details"
+                android:gravity="center"
+                android:fontFamily="@font/glacial_iindiference"
+                android:textSize="20dp"
+                android:paddingVertical="15dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="40dp"
+                android:paddingVertical="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/glacial_indifference_regular"
+                        android:text="Name"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/customer_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="text"
+                        android:fontFamily="@font/glacial_indifference_regular"
+                        android:hint="name"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/glacial_indifference_regular"
+                        android:text="Whatsapp Number"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/number"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:fontFamily="@font/glacial_indifference_regular"
+                        android:hint="whatsapp number"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/glacial_indifference_regular"
+                        android:text="Project category"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/category"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="textEmailAddress"
+                        android:fontFamily="@font/glacial_indifference_regular"
+                        android:hint="category"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/glacial_indifference_regular"
+                        android:text="Location"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="text"
+                        android:fontFamily="@font/glacial_indifference_regular"
+                        android:hint="location"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/glacial_indifference_regular"
+                        android:text="Description"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:inputType="text"
+                        android:fontFamily="@font/glacial_indifference_regular"
+                        android:hint="project description"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/glacial_indifference_regular"
+                        android:text="DeadLine"
+                        android:textSize="16dp" />
+
+                    <EditText
+                        android:id="@+id/deadline"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:fontFamily="@font/glacial_indifference_regular"
+                        android:inputType="date|datetime"
+                        android:hint="5/12/23"/>
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="16dp">
+
+                <Button
+                    android:id="@+id/approach_artist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="60dp"
+                    android:backgroundTint="@color/sunny"
+                    android:textFontWeight="1000"
+                    android:fontFamily="@font/cookie"
+                    android:text="Send Request"
+                    android:textColor="@color/black"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

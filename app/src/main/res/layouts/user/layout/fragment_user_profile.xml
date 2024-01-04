@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".customer.fragments.UserProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navbar1">
+
+
+
+        <LinearLayout
+            android:id="@+id/ContainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/container2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="100dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/profile_picture"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/profile_vector_icon"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/page_title" />
+                        <TextView
+                            android:id="@+id/showUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Venkateshwar"
+                            android:textSize="30dp"
+                            android:fontFamily="@font/glacial_iindiference"
+                            android:gravity="center"/>
+                        <TextView
+                            android:id="@+id/showUserEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:text="Venkateshwar.gmail.com"
+                            android:fontFamily="@font/glacial_iindiference"
+                            android:gravity="center"/>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/details_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <LinearLayout
+                            android:id="@+id/editDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:fontFamily="@font/glacial_indifference_regular"
+                                android:gravity="start|center"
+                                android:text="Edit Account Details" />
+
+                            <ImageView
+                                android:id="@+id/openPage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end|center"
+                                android:src="@drawable/baseline_arrow_forward_ios_24"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/orderHistory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:fontFamily="@font/glacial_indifference_regular"
+                                android:gravity="start|center"
+                                android:text="Order History" />
+
+                            <ImageView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end|center"
+                                android:src="@drawable/baseline_arrow_forward_ios_24"
+                                android:textColor="@color/black"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/notif"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:fontFamily="@font/glacial_indifference_regular"
+                                android:gravity="start|center"
+                                android:text="Notifications" />
+
+                            <ImageView
+                                android:id="@+id/notification_arrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end|center"
+                                android:src="@drawable/baseline_arrow_forward_ios_24"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/aboutUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:fontFamily="@font/glacial_indifference_regular"
+                                android:gravity="start|center"
+                                android:text="About" />
+
+                            <ImageView
+                                android:id="@+id/about_arrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end|center"
+                                android:src="@drawable/baseline_arrow_forward_ios_24"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/contactUs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:fontFamily="@font/glacial_indifference_regular"
+                                android:gravity="start|center"
+                                android:text="Contact Us" />
+
+                            <ImageView
+                                android:id="@+id/contact_us_arrow"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end|center"
+                                android:src="@drawable/baseline_arrow_forward_ios_24"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/registerAsArtist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:textSize="20dp"
+                                android:fontFamily="@font/glacial_indifference_regular"
+                                android:gravity="start|center"
+                                android:text="Register as an Artist" />
+
+                            <ImageView
+                                android:id="@+id/RAS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="end|center"
+                                android:src="@drawable/baseline_arrow_forward_ios_24"
+                                android:textColor="@color/black"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/logOutUser1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/logOutUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingHorizontal="20dp"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/glacial_iindiference"
+                    android:textColor="@color/teal_200"
+                    android:text="Logout"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</FrameLayout>

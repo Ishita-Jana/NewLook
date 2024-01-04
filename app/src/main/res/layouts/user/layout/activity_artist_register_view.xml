@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".customer.activity.ArtistRegisterViewActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/sunny"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!--Custom Toolbar-->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentInsetEnd="25dp"
+            app:contentInsetStart="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+
+
+
+                    <ImageView
+                        android:id="@+id/goBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:src="@drawable/baseline_arrow_back_ios_24"
+                        android:textStyle="bold">
+
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <LinearLayout
+            android:id="@+id/ContainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/register_as_artist"
+                >
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/landing"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="60dp"
+                android:paddingRight="60dp"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+                tools:layout_editor_absoluteX="-16dp"
+
+                >
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bring Visions to Life"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/paragraph"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register yourself as artist and chnage lives; including your own. Join one of the world's largest art customisation marketplace"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="16dp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="500dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/regArtistbtn1"
+                    android:text="Register as Artist"
+                    android:textSize="16dp"
+                    android:background="@color/sunny"
+                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:translationZ="50dp"
+                    >
+                </androidx.appcompat.widget.AppCompatButton>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="100dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/Categorytitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="So Many Reasons to Start"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:padding="20dp"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/potential_for_growth">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Potential for Growth"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>                    <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start small with solo practices, but from little acorns come great oak trees."
+                    android:textColor="@color/black"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:textSize="16dp"
+                    android:textAlignment="center"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/you_do_the_work_you_love">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You Do the Work You Love"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follow your passion and Making your customers happy is a thrill."
+                        android:textColor="@color/black"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:textSize="16dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/get_rewarded">
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get Rewarded"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textAlignment="center"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Build your expertise and earn money on each job undertaken."
+                        android:textColor="@color/black"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:textSize="16dp"
+                        android:textAlignment="center"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register as Artist"
+        android:background="@color/sunny"
+        android:textSize="18dp"
+        android:id="@+id/regArtistbtn2"
+        android:textAllCaps="false"
+        android:padding="20dp"
+        android:translationZ="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

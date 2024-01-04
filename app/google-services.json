@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "550344179068",
+    "firebase_url": "https://newlook-15e30-default-rtdb.firebaseio.com",
+    "project_id": "newlook-15e30",
+    "storage_bucket": "newlook-15e30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550344179068:android:0cb4664ff2d545f3ae38f9",
+        "android_client_info": {
+          "package_name": "com.example.newlook"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0rQa_43ZgrVU33f6pBMmoDgGmnlnTOoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

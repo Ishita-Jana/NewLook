@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".artist.fragments.ArtistOrdersFragment">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/artist_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/artist_home_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/artist_home"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/artist_welcome_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/glacial_iindiference"
+                android:gravity="center"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="5dp"
+                android:text="@string/artist_welcome_text"
+                android:visibility="gone" />
+
+
+            <!--        <androidx.recyclerview.widget.RecyclerView-->
+            <!--            android:id="@+id/customerListRecyclerView"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:paddingBottom="100dp">-->
+
+            <!--        </androidx.recyclerview.widget.RecyclerView>-->
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ordersListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="200dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <ImageButton
+            android:id="@+id/filterStatusButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/sunny"
+
+            android:contentDescription="filter"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/filter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.955"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <!--    <LinearLayout-->
+        <!--        android:id="@+id/linearLayout13"-->
+        <!--        android:paddingVertical="15dp"-->
+        <!--        android:background="@color/sunny"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent">-->
+
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Go back to profile"-->
+        <!--            android:fontFamily="@font/glacial_iindiference"-->
+        <!--            android:gravity="center"/>-->
+        <!--    </LinearLayout>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

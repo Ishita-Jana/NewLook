@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/artist_account_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Project Details"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="@color/sunny"
+        android:fontFamily="@font/glacial_iindiference"
+        android:textColor="@color/black"
+
+        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artist_account_text">
+
+
+        <LinearLayout
+            android:id="@+id/ContainerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/container2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--                <TextView-->
+                <!--                    android:id="@+id/profiletitle"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="30dp"-->
+                <!--                    android:padding="20dp"-->
+                <!--                    android:text="Your Profile"-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:textSize="20dp"-->
+                <!--                    android:textStyle="bold"></TextView>-->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/profile_picture"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="16dp"
+                            android:backgroundTint="@color/white"
+                            android:src="@drawable/profile_vector_icon"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/page_title" />
+                        <TextView
+                            android:id="@+id/showUserName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Carolina"
+                            android:textSize="30dp"
+                            android:fontFamily="@font/glacial_indifference_regular"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    tools:layout_editor_absoluteY="239dp">
+
+                    <LinearLayout
+                        android:id="@+id/details_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+
+                        <LinearLayout
+                            android:id="@+id/project_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="20dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/glacial_iindiference"
+                                android:gravity="start|center"
+                                android:text="Project"
+                                android:layout_marginHorizontal="5dp"
+                                android:backgroundTint="@color/teal_200"
+                                android:textAlignment="center"
+                                android:padding="10dp"
+                                android:background="@drawable/textview_outline"
+                                android:textColor="@color/white"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                android:id="@+id/category"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/glacial_indifference_regular"
+                                android:textAlignment="center"
+                                android:padding="10.5dp"
+                                android:layout_marginHorizontal="5dp"
+                                android:background="@drawable/textview_outline"
+                                android:textSize="17dp"
+
+                                android:text="Shoe"/>
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/deadline"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="20dp"
+                            android:paddingTop="5dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginHorizontal="5dp"
+                                android:fontFamily="@font/glacial_iindiference"
+                                android:gravity="start|center"
+                                android:text="DeadLine"
+                                android:background="@drawable/textview_outline"
+                                android:backgroundTint="@color/teal_200"
+                                android:textAlignment="center"
+                                android:padding="10dp"
+                                android:textColor="@color/white"
+                                android:textSize="17dp" />
+
+                            <TextView
+                                android:id="@+id/deadline_date"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginHorizontal="5dp"
+                                android:fontFamily="@font/glacial_indifference_regular"
+                                android:textAlignment="center"
+                                android:padding="10.5dp"
+                                android:background="@drawable/textview_outline"
+                                android:textSize="17dp"
+                                android:text="29th Nov 23"/>
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingHorizontal="20dp"
+                    android:textSize="17dp"
+                    android:fontFamily="@font/glacial_iindiference"
+                    android:textColor="@color/black"
+                    android:text="Description"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingHorizontal="20dp"
+                    android:textSize="17dp"
+                    android:textFontWeight="500"
+                    android:fontFamily="@font/glacial_indifference_regular"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt, ante sed luctus laoreet, tortor quam pulvinar urna, in dictum eros nisi faucibus est. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/whatsappButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="15dp"
+                android:gravity="center"
+                android:paddingHorizontal="30dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <LinearLayout
+                    android:id="@+id/whatsapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/textview_outline"
+                    android:backgroundTint="#C5C4C3">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/baseline_whatsapp_24"/>
+
+                    <Button
+                        android:id="@+id/chatButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/color_transparent"
+                        android:fontFamily="@font/glacial_iindiference"
+                        android:gravity="center"
+                        android:text="Chat on Whatsapp"
+                        android:textSize="16dp" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <Button
+                    android:id="@+id/deliveredButton"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered"
+                    android:fontFamily="@font/glacial_indifference_regular"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

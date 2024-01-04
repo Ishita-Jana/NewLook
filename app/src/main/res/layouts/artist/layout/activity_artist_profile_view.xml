@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".shared.activity.ArtistProfileViewActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:paddingLeft="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/artist_home"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/glacial_iindiference"
+                        android:gravity="center"
+                        android:text="1234" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Posts" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:fontFamily="@font/glacial_iindiference"
+                        android:gravity="center"
+                        android:text="12" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Orders" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingHorizontal="40dp"
+                android:paddingTop="10dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_outline"
+                    android:backgroundTint="@color/sunny"
+                    android:fontFamily="@font/glacial_iindiference"
+                    android:text="Approach Artist"
+                    android:textSize="16dp">
+
+                </androidx.appcompat.widget.AppCompatButton>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/glacial_iindiference"
+            android:text="Gayatri Rout" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/glacial_indifference_regular"
+            android:padding="5dp"
+            android:text="Bio:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tincidunt, ante sed luctus laoreet, tortor quam pulvinar urna, in dictum eros nisi faucibus est. Interdum et malesuada fames ac ante ipsum primis in faucibus. " />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/glacial_indifference_regular"
+            android:padding="5dp"
+            android:text="Skills: hjvhvgjvghv, hjvyv, hjvjyhv" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/glacial_indifference_regular"
+            android:padding="5dp"
+            android:text="Categories: shoe, denim, bghy" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/glacial_indifference_regular"
+            android:padding="5dp"
+            android:text="Avg response time: 2days" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/glacial_indifference_regular"
+            android:padding="5dp"
+            android:text="Charges: 50/- per day" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!--    <GridLayout-->
+    <!--        android:id="@+id/gridLayout"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:columnCount="3"-->
+    <!--        android:rowCount="0"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" />-->
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/glacial_indifference_regular"
+            android:gravity="center"
+            android:text="Works "
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/idGVcourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="6dp"
+        android:numColumns="3"
+        android:verticalSpacing="6dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

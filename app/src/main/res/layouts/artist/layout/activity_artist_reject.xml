@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".artist.activity.RejectOrderActivity"
+    >
+
+    <TextView
+        android:id="@+id/artist_account_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Reject Orders"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="@color/sunny"
+        android:fontFamily="@font/glacial_iindiference"
+        android:textColor="@color/black"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/whatsappButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artist_account_text">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/artist_account_text">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:backgroundTint="@color/white"
+                android:fontFamily="@font/glacial_iindiference"
+                android:gravity="center"
+                android:paddingVertical="30dp"
+                android:text="Rejection Reason"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/time"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="20dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/time_constraints" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/glacial_iindiference"
+                                    android:text="Time Constraints"
+                                    android:textSize="17dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/glacial_indifference_regular"
+                                    android:text="I am currently unable to take on new projects" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/not_a_match"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="30dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/not_equal" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/glacial_iindiference"
+                                    android:text="Not a Match"
+                                    android:textColor="@color/black"
+                                    android:textSize="17dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/glacial_indifference_regular"
+                                    android:text="The request doesn't align with my style or expertise" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/materials"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="30dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/prohibition" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/glacial_iindiference"
+                                    android:text="Unavailable Materials"
+                                    android:textSize="17dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/glacial_indifference_regular"
+                                    android:text="I currently lack the necessary materials or resources to fulfill this order." />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/other_reason"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_margin="5dp"
+                        app:cardBackgroundColor="@color/white"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="8dp"
+                        app:cardMaxElevation="10dp"
+                        app:cardPreventCornerOverlap="true"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="30dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/three_dots" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:paddingLeft="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:background="@android:color/transparent"
+                                    android:fontFamily="@font/glacial_iindiference"
+                                    android:text="Others"
+                                    android:textSize="17dp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/glacial_indifference_regular"
+                                    android:text="..."
+                                    android:textSize="17dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!--                    <androidx.constraintlayout.widget.ConstraintLayout-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content">-->
+
+                    <!--                        <Button-->
+                    <!--                            android:layout_width="match_parent"-->
+                    <!--                            android:layout_height="wrap_content"-->
+                    <!--                            android:backgroundTint="@color/teal_200"-->
+                    <!--                            android:text="Reject"-->
+                    <!--                            android:layout_marginHorizontal="60dp"-->
+                    <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--                            app:layout_constraintStart_toStartOf="parent"-->
+                    <!--                            app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--                    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/whatsappButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:clickable="true"
+
+        android:gravity="center"
+        android:paddingHorizontal="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/rejectButton"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#2EC4B6"
+            android:fontFamily="@font/glacial_iindiference"
+            android:gravity="center"
+            android:text="Reject"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

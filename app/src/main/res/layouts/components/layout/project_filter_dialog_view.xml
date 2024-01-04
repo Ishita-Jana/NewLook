@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/custom_dialog"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@color/black"
+        android:layout_marginHorizontal="180dp"
+        android:src="@drawable/textview_outline"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:layout_editor_absoluteX="0dp"
+        android:paddingLeft="20dp">
+
+        <RadioButton
+            android:id="@+id/new_projects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="New"
+            />
+        <RadioButton
+            android:id="@+id/pending_projects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="Pending"
+
+            />
+        <RadioButton
+            android:id="@+id/completed_projects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="Completed"
+            />
+        <RadioButton
+            android:id="@+id/rejected_projects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="Rejected"
+            />
+    </RadioGroup>
+
+
+</LinearLayout>

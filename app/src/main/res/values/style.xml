@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="dialog_filter" parent="Theme.AppCompat.Light">
+        <item name="android:colorBackground">@color/color_transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+    <style name="CustomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressTint">@color/custom_color</item>
+
+
+
+    </style>
+</resources>
